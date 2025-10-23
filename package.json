@@ -5,12 +5,15 @@
   "description": "",
   "main": "index.js",
   "directories": {
-    "test": "tests"
+    "test": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js --colors"
   },
   "scripts": {
-    "test": "node tests/capitalize.test.js"
+    "test": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js --colors"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.0.0"
+  }
 }
